@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour {
 
+	public static GameObject camera;
 	[SerializeField] GameObject player;
+
+	void Start(){
+		camera = this.gameObject;
+	}
 
 	void Update(){
 		Move ();

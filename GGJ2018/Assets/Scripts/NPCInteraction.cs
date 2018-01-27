@@ -6,7 +6,7 @@ public class NPCInteraction : MonoBehaviour {
 	[SerializeField] GameObject inRangeUI;
 	[SerializeField] GameObject dialogue;
 
-	bool hasInteracted = false;
+	public bool hasInteracted = false;
 
 	void Update(){
 		if (inRangeUI.activeSelf && Input.GetKeyDown (KeyCode.E)) {
