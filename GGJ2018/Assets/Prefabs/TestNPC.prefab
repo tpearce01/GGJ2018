@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inRangeUI: {fileID: 1675387612853638}
   dialogue: {fileID: 1406596910791882}
+  hasInteracted: 0
 --- !u!114 &114440699109919668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -457,6 +458,9 @@ MonoBehaviour:
     bushes, it may be dangerous to stay here*
   setOpt1: Call Life Alert.
   setOpt2: Run to safety.
+  setSavedDialogue: Thank you for saving me!
+  setSavedOpt1: You're welcome.
+  setSavedOpt2: Glad I could help!
   npci: {fileID: 114432492268441552}
   event1: 1
   event2: 0
