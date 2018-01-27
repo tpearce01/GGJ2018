@@ -267,6 +267,9 @@ MonoBehaviour:
     here...
   setOpt1: Give him Food and Water.
   setOpt2: I can't spare any supplies.
+  setSavedDialogue: I owe you my life.
+  setSavedOpt1: We're in this together.
+  setSavedOpt2: No worries.
   npci: {fileID: 114432496103956968}
   event1: 2
   event2: 0
@@ -529,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inRangeUI: {fileID: 1511128421517170}
   dialogue: {fileID: 1846746339814450}
+  hasInteracted: 0
 --- !u!114 &114437711253513840
 MonoBehaviour:
   m_ObjectHideFlags: 1

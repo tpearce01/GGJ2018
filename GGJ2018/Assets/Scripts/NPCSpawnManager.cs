@@ -9,6 +9,7 @@ public class NPCSpawnManager : MonoBehaviour {
 	bool[] eventFlags;
 	List<NPCList> livingNPCs = new List<NPCList>();
 	bool NPCListUpdated;
+	bool firstSpawn = true;
 
 	void Start(){
 		SpawnAll ();
@@ -16,8 +17,12 @@ public class NPCSpawnManager : MonoBehaviour {
 
 	void Update(){
 		//When player passes the last spawn location, spawn a random living NPC
-		if (CameraMovement.camera.transform.position.x >= spawnPosition.x) {
+
+		if (!firstSpawn && CameraMovement.camera.transform.position.x >= spawnPosition.x) {
 			SpawnLivingNPC ();
+		}
+		else if (firstSpawn && CameraMovement.camera.transform.position.x >= spawnPosition.x + distanceBetweenSpawns/2) {
+			firstSpawn = false;
 		}
 	}
 
