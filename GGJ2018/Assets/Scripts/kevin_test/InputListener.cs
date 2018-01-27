@@ -10,6 +10,7 @@ public class InputListener : MonoBehaviour {
     public EventArgs e = null;
     public delegate void Listener(InputListener listener, EventArgs e);
     public event Listener keyDown;
+    public event Listener mouseDown;
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +33,14 @@ public class InputListener : MonoBehaviour {
                 keyDown(this, e);
             }
             Debug.Log("The " + key + " has been pressed.");
+        }
+        if (ev.isMouse && ev.type == UnityEngine.EventType.MouseDown)
+        {
+            if (mouseDown != null)
+            {
+                mouseDown(this, e);
+            }
+            Debug.Log("The " + ev.button + " has been pressed.");
         }
     }
 }

@@ -6,13 +6,19 @@ using UnityEngine;
 public class PlayerScriptN : MonoBehaviour {
 
     [SerializeField]
+    Rigidbody2D rigidBody;
+    Collider2D collider;
     InputListener inputListener;
 
+    int exhaustion = 0;
+    bool moving = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         // subscribe to input listener
         inputListener.keyDown += new InputListener.Listener(onKeyDown);
+        rigidBody = GetComponent<Rigidbody2D>();
+        collider = GetComponent<Collider2D>();
 	}
 
     private void onKeyDown(InputListener listener, EventArgs e)
@@ -21,10 +27,12 @@ public class PlayerScriptN : MonoBehaviour {
         if (inputListener.key == KeyCode.D)
         {
             // move right
+            MoveRight();
         }
         if (inputListener.key == KeyCode.A)
         {
             // move left
+            MoveLeft();
         }
         if (inputListener.key == KeyCode.E)
         {
