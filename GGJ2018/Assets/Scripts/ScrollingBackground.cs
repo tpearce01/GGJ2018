@@ -16,7 +16,6 @@ public class ScrollingBackground : MonoBehaviour {
 	float startPos = 0;
 
 	void Start(){
-		Test ();
 		backgrounds [1].transform.position = new Vector3 (background.bounds.max.x * 2, backgrounds [1].transform.position.y, backgrounds [1].transform.position.z);
 	}
 
@@ -32,10 +31,5 @@ public class ScrollingBackground : MonoBehaviour {
 			startPos = camera.transform.position.x;
 		}
 	}
-
-	void Test(){
-		Debug.Log (background.bounds.max.x);
-	}
-
 
 }
