@@ -25,7 +25,7 @@ public class CameraMovement : MonoBehaviour {
 		}
 	}
 
-	public static int xPosition(){
+	public static float xPosition(){
 		return camera.gameObject.transform.position.x;
 	}
 }
