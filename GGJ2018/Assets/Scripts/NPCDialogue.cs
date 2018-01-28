@@ -88,19 +88,6 @@ public class NPCDialogue : MonoBehaviour {
 			break;
 		}
 
-		/*NoEvent = 0,
-	LifeAlert = 1,
-	StarvingGuy = 2,
-	SubOneFood = 3,
-	SubThreeFood = 4,
-	SubOneWater = 5,
-	SubTwoWater = 6,
-	Exhaust10 = 7,
-	Exhaust20 = 8,
-	Exhaust30 = 9,
-	Exhaust50 = 10,
-	SubOneOfEach = 11,
-	Thief = 12*/
 	}
 
 	void OnEnable(){
