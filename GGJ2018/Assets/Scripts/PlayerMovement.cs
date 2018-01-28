@@ -5,23 +5,42 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 	[SerializeField] float moveSpeed;
 	[SerializeField] Rigidbody2D rgbd;
+    [SerializeField] ExhaustionBar exhaustionBar;
 	[SerializeField] Animator anim;
 	bool isMoving;
+    bool isExhausted;
 
 	void FixedUpdate(){
 		isMoving = false;
-		if (Input.GetKey (KeyCode.A)) {
+        isExhausted = false;
+        
+        if (exhaustionBar.maxExhaustion()) {
+            isExhausted = !isExhausted;
+            moveSpeed = 0;
+            anim.SetBool ("isExhausted", true);
+        } else {
+            anim.SetBool("isExhausted", false);
+        }
+
+		if (Input.GetKey (KeyCode.A)) {// && !isExhausted) {
 			Move (Direction.Left);
 			gameObject.transform.rotation = new Quaternion (0,0,0,0);
 			isMoving = !isMoving;
 		}
-		if (Input.GetKey (KeyCode.D)) {
+		if (Input.GetKey (KeyCode.D)) { //&& !isExhausted) {
 			Move (Direction.Right);
 			gameObject.transform.rotation = new Quaternion (0,180,0,0);
 			isMoving = !isMoving;
 		}
 
-		if (isMoving) {
+        if (exhaustionBar.overHalfExhaustion())
+        {
+            anim.SetBool("isTired", true);
+        } else {
+            anim.SetBool("isTired", false);
+        }
+
+        if (isMoving) {
 			anim.SetBool ("isMoving", true);
 			if (!AudioManager.instance.IsPlaying (Sound.Footsteps)) {
 				AudioManager.instance.PlaySoundLoop (Sound.Footsteps);
