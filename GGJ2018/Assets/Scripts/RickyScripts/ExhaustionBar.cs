@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ExhaustionBar : MonoBehaviour {
-
+	public static ExhaustionBar instance;
     [SerializeField] private float lerpSpeed;
     [SerializeField] private float exhaustionSpeed;
     [SerializeField] private Image content;
@@ -32,6 +32,7 @@ public class ExhaustionBar : MonoBehaviour {
     }
 
     private void Awake() {
+		instance = this;
         myExhaustion.Initialize();
     }
 
@@ -50,8 +51,8 @@ public class ExhaustionBar : MonoBehaviour {
         return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
     }
 
-	public static void ChangeValue(float value){
-		fillAmount += value;
+	public void ChangeValue(float value){
+		myExhaustion.CurrentVal += value;
 	}
 
 	void AddExhaustion(){
