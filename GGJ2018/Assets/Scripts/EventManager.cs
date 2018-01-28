@@ -57,13 +57,19 @@ public class EventManager : MonoBehaviour {
 		completedEvents[(int)et] = true;
 	}
 
-	public static void SubtractOneWater(){
-		InventoryManager.instance.ChangeItemCount (Item.Water, -1);
+	public static void SubtractOneWater(int NPCNumber){
+		if (InventoryManager.instance.IsValidOperation (Item.Water, 1)) {
+			InventoryManager.instance.ChangeItemCount (Item.Water, -1);
+			HelpedNPC (NPCNumber);
+		}
 	}
 
-	public static void SubtractTwoWater(){
-		SubtractOneWater ();
-		SubtractOneWater ();
+	public static void SubtractTwoWater(int NPCNumber){
+		if (InventoryManager.instance.IsValidOperation (Item.Water, 2)) {
+			SubtractOneWater (NPCNumber);
+			SubtractOneWater (NPCNumber);
+			HelpedNPC (NPCNumber);
+		}
 	}
 
 	public static void AddOneWater(){
@@ -74,46 +80,54 @@ public class EventManager : MonoBehaviour {
 		InventoryManager.instance.ChangeItemCount (Item.Food, 1);
 	}
 
-	public static void SubtractOneFood(){
-		InventoryManager.instance.ChangeItemCount (Item.Food, -1);
+	public static void SubtractOneFood(int NPCNumber){
+		if (InventoryManager.instance.IsValidOperation (Item.Food, 1)) {
+			InventoryManager.instance.ChangeItemCount (Item.Food, -1);
+			HelpedNPC (NPCNumber);
+		}
 	}
 
-	public static void SubtractThreeFood(){
-		SubtractOneFood ();
-		SubtractOneFood ();
-		SubtractOneFood ();
+	public static void SubtractThreeFood(int NPCNumber){
+		if (InventoryManager.instance.IsValidOperation (Item.Food, 3)) {
+			SubtractOneFood (NPCNumber);
+			SubtractOneFood (NPCNumber);
+			SubtractOneFood (NPCNumber);
+			HelpedNPC (NPCNumber);
+		}
 	}
 
-	public static void IncreaseExhaustion10(){
-		ExhaustionBar.ChangeValue (.1f);
+	public static void IncreaseExhaustion10(int NPCNumber){
+		ExhaustionBar.instance.ChangeValue (.1f);
 	}
 
-	public static void IncreaseExhaustion20(){
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
+	public static void IncreaseExhaustion20(int NPCNumber){
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
 	}
 
-	public static void IncreaseExhaustion30(){
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
+	public static void IncreaseExhaustion30(int NPCNumber){
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
 	}
 
-	public static void IncreaseExhaustion50(){
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
-		IncreaseExhaustion10 ();
+	public static void IncreaseExhaustion50(int NPCNumber){
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
+		IncreaseExhaustion10 (NPCNumber);
 	}
 
 	public static void ReduceExhaustion10(){
-		ExhaustionBar.ChangeValue (-.1f);
+		ExhaustionBar.instance.ChangeValue (-.1f);
 	}
 
 	public static void SubtractOneOfEach(){
-		InventoryManager.instance.ChangeItemCount (Item.Food, -1);
-		InventoryManager.instance.ChangeItemCount (Item.Water, -1);
+		if (InventoryManager.instance.IsValidOperation (Item.Water, 1) && InventoryManager.instance.IsValidOperation (Item.Food, 1)) {
+			InventoryManager.instance.ChangeItemCount (Item.Food, -1);
+			InventoryManager.instance.ChangeItemCount (Item.Water, -1);
+		}
 	}
 
 	public static void Thief(){
