@@ -55,6 +55,14 @@ public class ExhaustionBar : MonoBehaviour {
 		myExhaustion.CurrentVal += value;
 	}
 
+    public bool overHalfExhaustion() {
+        return myExhaustion.CurrentVal > MaxValue / 2 && myExhaustion.CurrentVal <= MaxValue;
+    }
+
+    public bool maxExhaustion(){
+        return myExhaustion.CurrentVal == MaxValue;
+    }
+
 	void AddExhaustion(){
 		if (CameraMovement.xPosition () - startPos > tickDistance) {
 			startPos = CameraMovement.xPosition ();
