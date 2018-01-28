@@ -8,7 +8,7 @@ public class CameraMovement : MonoBehaviour {
 	[SerializeField] GameObject player;
 	[SerializeField] float offset;
 
-	void Start(){
+	void Awake(){
 		camera = this.gameObject;
 	}
 
