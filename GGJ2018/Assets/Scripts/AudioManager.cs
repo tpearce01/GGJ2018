@@ -90,6 +90,16 @@ public class AudioManager : MonoBehaviour {
 
 	}
 
+	public bool IsPlaying(Sound s){
+		for (int i = 0; i < sources.Count; i++) {
+			if (sources [i].clip == audioFiles [(int)s]) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 
 	IEnumerator Fadeout(AudioSource a, float duration){
 		for (int i = 0; i < 50; i++) {
@@ -101,5 +111,7 @@ public class AudioManager : MonoBehaviour {
 }
 
 public enum Sound{
-	Test = 0
+	Test = 0,
+	HealUp = 1,
+	Footsteps = 2
 }

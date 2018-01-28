@@ -12,6 +12,7 @@ public class EventManager : MonoBehaviour {
 		CompletedEvent (EventType.StarvingGuy);
 		//Inventory.GiveWater();
 		//Inventory.GiveFood();
+		AudioManager.instance.PlaySound(Sound.HealUp);
 	}
 
 	//TestNPC
@@ -19,6 +20,7 @@ public class EventManager : MonoBehaviour {
 		Debug.Log ("You called Life Alert");
 		CompletedEvent (EventType.LifeAlert);
 		//Inventory.UseWater();
+		AudioManager.instance.PlaySound(Sound.HealUp);
 	}
 
 	//Default or no event
