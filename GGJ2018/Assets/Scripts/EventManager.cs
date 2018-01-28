@@ -10,8 +10,6 @@ public class EventManager : MonoBehaviour {
 	public static void HelpedStarvingGuy(){
 		Debug.Log ("You shared your rations");
 		CompletedEvent (EventType.StarvingGuy);
-		//Inventory.GiveWater();
-		//Inventory.GiveFood();
 		AudioManager.instance.PlaySound(Sound.HealUp);
 	}
 
@@ -19,7 +17,6 @@ public class EventManager : MonoBehaviour {
 	public static void HelpedLifeAlert(){
 		Debug.Log ("You called Life Alert");
 		CompletedEvent (EventType.LifeAlert);
-		//Inventory.UseWater();
 		AudioManager.instance.PlaySound(Sound.HealUp);
 	}
 
@@ -133,11 +130,3 @@ public enum EventType{
 	SubOneOfEach = 11,
 	Thief = 12
 }
-
-/*Thief takes all supplies
- * Food: 5 People need Food [ 1 person: 3 food ]
-Water: 6 People need water [ 1 person: 2 water ]
-Stamina: 5 people use your Stamina [ 1: 10% stamina, 2: 20% stamina, 1: 30% stamina, 1: 50% stamina ]
-All: 1 person.
-Thief: 1 person. [ takes all water, all food ]
-*/
