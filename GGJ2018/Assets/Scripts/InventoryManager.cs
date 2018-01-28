@@ -42,11 +42,7 @@ public class InventoryManager : MonoBehaviour {
 		SetItemCount ((int)index, value);
 	}
 	public void SetItemCount(int index, int value){
-		if (itemObjects [index].GetComponent<Item_Count> ().Amount <= 0) {
-			OpenNotEnoughResourcesPanel ();
-		} else {
-			itemObjects [index].GetComponent<Item_Count> ().SetValue (value);
-		}
+		itemObjects [index].GetComponent<Item_Count> ().SetValue (value);
 	}
 
 	public void CloseNotEnoughResourcesPanel(){
