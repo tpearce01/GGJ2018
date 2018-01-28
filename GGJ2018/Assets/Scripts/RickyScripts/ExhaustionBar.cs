@@ -10,7 +10,7 @@ public class ExhaustionBar : MonoBehaviour {
     [SerializeField] private float exhaustionSpeed;
     [SerializeField] private Image content;
     [SerializeField] private Stats myExhaustion;
-    private float fillAmount;
+	private static float fillAmount;
     private float startPos = 0;
 
     public float MaxValue {
@@ -34,7 +34,7 @@ public class ExhaustionBar : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
 		HandleBar();
         if (CameraMovement.xPosition() > startPos) {
             myExhaustion.CurrentVal += exhaustionSpeed;
@@ -51,4 +51,8 @@ public class ExhaustionBar : MonoBehaviour {
     private float Map(float value, float inMin, float inMax, float outMin, float outMax) {
         return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
     }
+
+	public static void ChangeValue(float value){
+		fillAmount += value;
+	}
 }
