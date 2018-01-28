@@ -17,7 +17,6 @@ public class NPCSpawnManager : MonoBehaviour {
 
 	void Update(){
 		//When player passes the last spawn location, spawn a random living NPC
-
 		if (!firstSpawn && CameraMovement.camera.transform.position.x >= spawnPosition.x) {
 			SpawnLivingNPC ();
 		}
