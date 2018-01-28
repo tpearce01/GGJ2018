@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 726266819}
+  offset: 1
 --- !u!61 &218977018
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -468,6 +469,46 @@ Prefab:
         type: 2}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114711023686922998, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 726266826}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61012120899860434, guid: b666d41d4bc314047a5b1b4a19f665eb,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b666d41d4bc314047a5b1b4a19f665eb, type: 2}
