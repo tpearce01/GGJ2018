@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 114305192384184014}
   - component: {fileID: 58874775917649548}
   m_Layer: 0
-  m_Name: BrownFoxNPC 1
+  m_Name: WaterBrownFoxNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
   setDialogue: 'Foxy: Ooh wee! Ouch. Need water to clean these wounds.'
   setOpt1: Give 1 water.
   setOpt2: Ignore.
-  setSavedDialogue: Ahh. Thank you very much.
+  setSavedDialogue: 'Foxy: My wounds feel much better now. Thanks!!'
   setSavedOpt1: You're welcome.
   setSavedOpt2: Glad I could help!
   npci: {fileID: 114305192384184014}

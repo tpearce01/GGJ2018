@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 114002972930705630}
   - component: {fileID: 58982237744577920}
   m_Layer: 0
-  m_Name: BrownCatNPC 1
+  m_Name: FoodBrownCatNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,8 +385,8 @@ MonoBehaviour:
   setDialogue: 'Toast: Need Food. Mew needs it neoww.  '
   setOpt1: Give 1 Food.
   setOpt2: Ignore.
-  setSavedDialogue: '...'
-  setSavedOpt1: '"Hope you feel better."'
+  setSavedDialogue: 'Toast: ...'
+  setSavedOpt1: '"Woof."'
   setSavedOpt2: Walk away.
   npci: {fileID: 114002972930705630}
   event1: 2

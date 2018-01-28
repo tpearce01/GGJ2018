@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 114435515939208134}
   - component: {fileID: 58379464744304108}
   m_Layer: 0
-  m_Name: PinkBunnyNPC
+  m_Name: FoodPinkBunnyNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,13 +401,12 @@ MonoBehaviour:
   dialogueText: {fileID: 114768878102552364}
   option1Button: {fileID: 114266100359391740}
   option2Button: {fileID: 114773306795641218}
-  setDialogue: 'Pinky: Help! I''ve fallen and can''t get up! *You hear growling from
-    the nearby bushes, it may be dangerous to stay here*'
-  setOpt1: Call Life Alert.
-  setOpt2: Run to safety.
-  setSavedDialogue: Thank you for saving me!
-  setSavedOpt1: You're welcome.
-  setSavedOpt2: Glad I could help!
+  setDialogue: 'Pinky: Pinky needs food. Pinky is hoppity hungry.'
+  setOpt1: Give 1 food.
+  setOpt2: Ignore.
+  setSavedDialogue: 
+  setSavedOpt1: 
+  setSavedOpt2: 
   npci: {fileID: 114435515939208134}
   event1: 1
   event2: 0

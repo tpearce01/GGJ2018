@@ -489,10 +489,9 @@ MonoBehaviour:
   dialogueText: {fileID: 114266514569056688}
   option1Button: {fileID: 114538565821695012}
   option2Button: {fileID: 114825940619299782}
-  setDialogue: 'Dr. Bare: Help! I''ve fallen and can''t get up! *You hear growling
-    from the nearby bushes, it may be dangerous to stay here*'
-  setOpt1: Call Life Alert.
-  setOpt2: Run to safety.
+  setDialogue: 'Prof. Bare: I''m BARELY survivng without water. '
+  setOpt1: Give 2 water.
+  setOpt2: Ignore.
   setSavedDialogue: Thank you for saving me!
   setSavedOpt1: You're welcome.
   setSavedOpt2: Glad I could help!

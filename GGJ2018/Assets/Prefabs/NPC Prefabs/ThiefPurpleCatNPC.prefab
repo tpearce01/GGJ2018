@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 114646843345486966}
   - component: {fileID: 58905914344492512}
   m_Layer: 0
-  m_Name: PurpleCatNPC
+  m_Name: ThiefPurpleCatNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,13 +262,13 @@ MonoBehaviour:
   dialogueText: {fileID: 114891848440399230}
   option1Button: {fileID: 114474508538784758}
   option2Button: {fileID: 114853931342969640}
-  setDialogue: 'Cheshire: Help! I''ve fallen and can''t get up! You really need to
-    help me. I''m going to need some food and water.'
-  setOpt1: Call Life Alert.
-  setOpt2: Run to safety.
-  setSavedDialogue: 'THANKS FOR THE FOOD AND WATER! '
-  setSavedOpt1: You're welcome.
-  setSavedOpt2: Glad I could help!
+  setDialogue: 'Cheshire: Help! I''ve fallen so hard and can''t get up! You really
+    need to help me. I need food and water.'
+  setOpt1: Give 1 water, 1 food, 1 stamina
+  setOpt2: Ignore.
+  setSavedDialogue: 
+  setSavedOpt1: 
+  setSavedOpt2: 
   npci: {fileID: 114646843345486966}
   event1: 1
   event2: 0

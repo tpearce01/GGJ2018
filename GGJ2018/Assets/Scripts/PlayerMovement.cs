@@ -23,8 +23,14 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (isMoving) {
 			anim.SetBool ("isMoving", true);
+			if (!AudioManager.instance.IsPlaying (Sound.Footsteps)) {
+				AudioManager.instance.PlaySoundLoop (Sound.Footsteps);
+			}
 		} else {
 			anim.SetBool ("isMoving", false);
+			if (AudioManager.instance.IsPlaying (Sound.Footsteps)) {
+				AudioManager.instance.EndSoundAbrupt (Sound.Footsteps);
+			}
 		}
 	}
 

@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114021696933777480}
   - component: {fileID: 58267098572496318}
   m_Layer: 0
-  m_Name: BrownBearNPC
+  m_Name: StaminaBrownBearNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,13 +622,13 @@ MonoBehaviour:
   option2Button: {fileID: 114555405610251714}
   setDialogue: 'Bob: Help! I''ve fallen and can''t get up! *You hear growling from
     the nearby bushes, it may be dangerous to stay here*'
-  setOpt1: Call Life Alert.
-  setOpt2: Run to safety.
-  setSavedDialogue: Thank you for saving me!
+  setOpt1: Help him up. (Uses 1 Stamina)
+  setOpt2: Ignore.
+  setSavedDialogue: 'Bob: Thank you for saving me!'
   setSavedOpt1: You're welcome.
   setSavedOpt2: Glad I could help!
   npci: {fileID: 114021696933777480}
-  event1: 1
+  event1: 2
   event2: 0
 --- !u!212 &212190495964981422
 SpriteRenderer:

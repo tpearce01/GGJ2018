@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 114445871862079494}
   - component: {fileID: 58611346233196696}
   m_Layer: 0
-  m_Name: WhiteGoatNPC
+  m_Name: WaterWhiteGoatNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,13 +301,13 @@ MonoBehaviour:
   dialogueText: {fileID: 114702426306065594}
   option1Button: {fileID: 114100364768011154}
   option2Button: {fileID: 114651068299076384}
-  setDialogue: 'Meh: Help! I''ve fallen and can''t get up! *You hear growling from
-    the nearby bushes, it may be dangerous to stay here*'
-  setOpt1: Call Life Alert.
-  setOpt2: Run to safety.
-  setSavedDialogue: Thank you for saving me!
-  setSavedOpt1: You're welcome.
-  setSavedOpt2: Glad I could help!
+  setDialogue: 'Meh: You''re such a baaaad pilot. How could you crash us here?! We''re
+    stuck with no food or water.'
+  setOpt1: Give 1 water.
+  setOpt2: Ignore.
+  setSavedDialogue: 'Meh: You still stink!'
+  setSavedOpt1: '"I''m sorry."'
+  setSavedOpt2: '"Well. I know you''re stressed, but I''m trying my best."'
   npci: {fileID: 114445871862079494}
   event1: 1
   event2: 0

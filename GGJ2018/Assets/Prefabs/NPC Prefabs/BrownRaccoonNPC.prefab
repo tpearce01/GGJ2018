@@ -278,7 +278,7 @@ MonoBehaviour:
     the nearby bushes, it may be dangerous to stay here*'
   setOpt1: Call Life Alert.
   setOpt2: Run to safety.
-  setSavedDialogue: Thank you for saving me!
+  setSavedDialogue: 'Rocket: Thank you for saving me!'
   setSavedOpt1: You're welcome.
   setSavedOpt2: Glad I could help!
   npci: {fileID: 114889115073753752}

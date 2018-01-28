@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 114052388743439246}
   - component: {fileID: 58980272262782626}
   m_Layer: 0
-  m_Name: ChickenNPC
+  m_Name: WaterChickenNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
   setDialogue: 'Henny: Need... some... water...  '
   setOpt1: Give 1 Water.
   setOpt2: Ignore.
-  setSavedDialogue: 'Thanks. '
+  setSavedDialogue: 'Henny: Thanks for giving me water. '
   setSavedOpt1: '"You''re welcome."'
   setSavedOpt2: '"No problem."'
   npci: {fileID: 114052388743439246}
