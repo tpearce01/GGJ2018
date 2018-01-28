@@ -34,15 +34,15 @@ public class NPCDialogue : MonoBehaviour {
 		npci.EndDialogue ();
 	}
 
-	public void TriggerEvent1(){
-		TriggerEvent (event1);
+	public void TriggerEvent1(int NPCNumber){
+		TriggerEvent (event1, NPCNumber);
 	}
 
-	public void TriggerEvent2(){
-		TriggerEvent (event2);
+	public void TriggerEvent2(int NPCNumber){
+		TriggerEvent (event2, NPCNumber);
 	}
 
-	void TriggerEvent(EventType e){
+	void TriggerEvent(EventType e, int NPCNumber){
 		switch ((int)e) {
 		case 0:
 			EventManager.NoEvent ();
@@ -54,28 +54,28 @@ public class NPCDialogue : MonoBehaviour {
 			EventManager.HelpedStarvingGuy ();
 			break;
 		case 3:
-			EventManager.SubtractOneFood ();
+			EventManager.SubtractOneFood (NPCNumber);
 			break;
 		case 4:
-			EventManager.SubtractThreeFood ();
+			EventManager.SubtractThreeFood (NPCNumber);
 			break;
 		case 5:
-			EventManager.SubtractOneWater ();
+			EventManager.SubtractOneWater (NPCNumber);
 			break;
 		case 6:
-			EventManager.SubtractTwoWater ();
+			EventManager.SubtractTwoWater (NPCNumber);
 			break;
 		case 7:
-			EventManager.IncreaseExhaustion10 ();
+			EventManager.IncreaseExhaustion10 (NPCNumber);
 			break;
 		case 8:
-			EventManager.IncreaseExhaustion20 ();
+			EventManager.IncreaseExhaustion20 (NPCNumber);
 			break;
 		case 9:
-			EventManager.IncreaseExhaustion30 ();
+			EventManager.IncreaseExhaustion30 (NPCNumber);
 			break;
 		case 10:
-			EventManager.IncreaseExhaustion50 ();
+			EventManager.IncreaseExhaustion50 (NPCNumber);
 			break;
 		case 11:
 			EventManager.SubtractOneOfEach ();
