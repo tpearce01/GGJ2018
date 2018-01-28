@@ -9,6 +9,13 @@ public class Item_Count : MonoBehaviour {
     public Button item_button; //Item being used
 
     [SerializeField] private int amount; //How many # items they have
+    public int Amount
+    {
+        get
+        {
+            return amount;
+        }
+    }
 
 	void Start(){
 		UpdateText ();
