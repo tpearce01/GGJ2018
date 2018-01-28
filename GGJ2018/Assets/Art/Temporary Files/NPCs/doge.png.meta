@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 0e1762b521648f144b9f19595e119047
-timeCreated: 1517123504
+guid: fb38281dcbefef2428203b8cabe1a13d
+timeCreated: 1517099914
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Dead_Brown_Cat
-    21300002: Dead_Brown_Bear
-    21300004: Dead_Brown_Fox
-    21300006: Dead_Brown_Shiba
-    21300008: Dead_Red_Panda
-    21300010: Dead_Purple_Cat
-    21300012: Dead_White_Goat
-    21300014: Dead_Purple_Bunny
-    21300016: Dead_LightBrown_Bear
-    21300018: Dead_Grey_Shiba
+    21300000: doge_0
+    21300002: doge_1
+    21300004: doge_2
+    21300006: doge_3
+    21300008: doge_4
+    21300010: doge_5
+    21300012: doge_6
+    21300014: doge_7
+    21300016: doge_8
+    21300018: doge_9
+    21300020: doge_10
+    21300022: doge_11
+    21300024: doge_12
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -90,141 +93,183 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead_Brown_Cat
+      name: doge_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 58
-        width: 63
-        height: 31
+        x: 1
+        y: 131
+        width: 31
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Brown_Bear
+      name: doge_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 59
-        width: 62
-        height: 29
+        x: 61
+        y: 131
+        width: 31
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Brown_Fox
+      name: doge_2
       rect:
         serializedVersion: 2
-        x: 165
-        y: 54
-        width: 63
-        height: 35
+        x: 1
+        y: 67
+        width: 32
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Brown_Shiba
+      name: doge_3
       rect:
         serializedVersion: 2
-        x: 244
-        y: 56
-        width: 64
-        height: 33
+        x: 61
+        y: 67
+        width: 31
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Red_Panda
+      name: doge_4
       rect:
         serializedVersion: 2
-        x: 317
-        y: 53
-        width: 63
-        height: 36
+        x: 121
+        y: 67
+        width: 31
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Purple_Cat
+      name: doge_5
       rect:
         serializedVersion: 2
-        x: 5
-        y: 20
-        width: 63
-        height: 31
+        x: 9
+        y: 3
+        width: 42
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_White_Goat
+      name: doge_6
       rect:
         serializedVersion: 2
-        x: 84
-        y: 18
-        width: 65
-        height: 31
+        x: 69
+        y: 2
+        width: 45
+        height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Purple_Bunny
+      name: doge_7
       rect:
         serializedVersion: 2
-        x: 161
-        y: 18
-        width: 68
-        height: 29
+        x: 129
+        y: 2
+        width: 46
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_LightBrown_Bear
+      name: doge_8
       rect:
         serializedVersion: 2
-        x: 242
-        y: 18
-        width: 62
-        height: 30
+        x: 186
+        y: 2
+        width: 48
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Dead_Grey_Shiba
+      name: doge_9
       rect:
         serializedVersion: 2
-        x: 315
-        y: 14
-        width: 64
-        height: 33
+        x: 247
+        y: 2
+        width: 44
+        height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: doge_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: doge_11
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 2
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: doge_12
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

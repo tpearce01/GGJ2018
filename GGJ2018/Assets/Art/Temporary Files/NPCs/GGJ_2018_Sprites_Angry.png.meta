@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 770b32427a204714799fecb30c2312ec
-timeCreated: 1517101741
+timeCreated: 1517123421
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ TextureImporter:
     21300002: Angry_Brown_Bear
     21300004: Angry_Red_Fox
     21300006: Angry_Brown_Shiba
-    21300008: Angry_Brown_Raccoon
+    21300008: Angry_Red_Panda
     21300010: Angry_Purple_Cat
     21300012: Angry_White_Goat
     21300014: Angry_Pink_Bunny
@@ -146,7 +146,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Angry_Brown_Raccoon
+      name: Angry_Red_Panda
       rect:
         serializedVersion: 2
         x: 158

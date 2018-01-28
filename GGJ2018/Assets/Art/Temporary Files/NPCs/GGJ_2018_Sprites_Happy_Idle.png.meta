@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 71ea935ef289aca48b61fb49871ad43b
-timeCreated: 1517101866
+timeCreated: 1517123461
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ TextureImporter:
     21300002: Happy_Brown_Bear
     21300004: Happy_Brown_Fox
     21300006: Happy_Brown_Shiba
-    21300008: Happy_Brown_Raccoon
+    21300008: Happy_Red_Panda
     21300010: Happy_Purple_Cat
     21300012: Happy_White_Goat
     21300014: Happy_Pink_Bunny
@@ -146,7 +146,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Happy_Brown_Raccoon
+      name: Happy_Red_Panda
       rect:
         serializedVersion: 2
         x: 158

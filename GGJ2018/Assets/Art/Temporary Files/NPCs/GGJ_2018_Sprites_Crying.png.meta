@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b952498f4b2ffcb4eae7c83e82031ef0
-timeCreated: 1517101620
+timeCreated: 1517123440
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ TextureImporter:
     21300002: Crying_Brown_Bear
     21300004: Crying_Brown_Fox
     21300006: Crying_Brown_Shiba
-    21300008: Crying_Brown_Raccoon
+    21300008: Crying_Red_Panda
     21300010: Crying_Purple_Cat
     21300012: Crying_White_Goat
     21300014: Crying_Pink_Bunny
@@ -146,7 +146,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Crying_Brown_Raccoon
+      name: Crying_Red_Panda
       rect:
         serializedVersion: 2
         x: 158
