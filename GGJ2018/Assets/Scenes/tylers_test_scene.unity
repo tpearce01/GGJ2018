@@ -2077,6 +2077,11 @@ Prefab:
       propertyPath: m_Name
       value: TestPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 114786040224391908, guid: 2dec1aaf65ef07a4b9dd2bd9f8b56577,
+        type: 2}
+      propertyPath: exhaustionBar
+      value: 
+      objectReference: {fileID: 840676544}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dec1aaf65ef07a4b9dd2bd9f8b56577, type: 2}
   m_IsPrefabParent: 0

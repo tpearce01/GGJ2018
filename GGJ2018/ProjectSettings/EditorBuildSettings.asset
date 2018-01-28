@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/game_over.unity
     guid: 46493f1d5ce654c83b2fa90421159458
+  - enabled: 1
+    path: Assets/Scenes/tylers_test_scene.unity
+    guid: 138fb9fee795a44239c6d441d34e575f
