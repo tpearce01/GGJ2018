@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* ScrollingBackground
+ * 	
+ * Use: Set Camera and background sprite
+ * Automatically moves background as camera moves
+ */ 
 public class ScrollingBackground : MonoBehaviour {
 
 	[SerializeField] GameObject camera;
@@ -11,7 +16,6 @@ public class ScrollingBackground : MonoBehaviour {
 	float startPos = 0;
 
 	void Start(){
-		Test ();
 		backgrounds [1].transform.position = new Vector3 (background.bounds.max.x * 2, backgrounds [1].transform.position.y, backgrounds [1].transform.position.z);
 	}
 
@@ -27,10 +31,5 @@ public class ScrollingBackground : MonoBehaviour {
 			startPos = camera.transform.position.x;
 		}
 	}
-
-	void Test(){
-		Debug.Log (background.bounds.max.x);
-	}
-
 
 }
