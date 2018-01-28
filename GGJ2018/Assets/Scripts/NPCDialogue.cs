@@ -43,6 +43,7 @@ public class NPCDialogue : MonoBehaviour {
 	}
 
 	void TriggerEvent(EventType e, int NPCNumber){
+		AudioManager.instance.PlaySound (Sound.MenuClick);
 		switch ((int)e) {
 		case 0:
 			EventManager.NoEvent ();

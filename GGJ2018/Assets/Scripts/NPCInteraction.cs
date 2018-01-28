@@ -12,6 +12,7 @@ public class NPCInteraction : MonoBehaviour {
 		if (inRangeUI.activeSelf && Input.GetKeyDown (KeyCode.E)) {
 			dialogue.SetActive(true);
 			inRangeUI.SetActive (false);
+			AudioManager.instance.PlaySound (Sound.MenuClick);
 		}
 	}
 

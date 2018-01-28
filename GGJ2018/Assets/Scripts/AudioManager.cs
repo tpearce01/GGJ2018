@@ -113,5 +113,6 @@ public class AudioManager : MonoBehaviour {
 public enum Sound{
 	Test = 0,
 	HealUp = 1,
-	Footsteps = 2
+	Footsteps = 2,
+	MenuClick = 3,
 }
