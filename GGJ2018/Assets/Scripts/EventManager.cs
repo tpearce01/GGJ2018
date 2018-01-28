@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour {
 
-	static bool[] completedEvents = new bool[3];	//List of event status flags. False means not encountered or failed, True means successfully completed.
+	static bool[] completedEvents = new bool[18];	//List of event status flags. False means not encountered or failed, True means successfully completed.
+													//Size should be euqal to number of events/NPCs in the game
 
 	//TestNPC2
 	public static void HelpedStarvingGuy(){
@@ -25,12 +26,19 @@ public class EventManager : MonoBehaviour {
 		Debug.Log ("No Event Triggered.");
 	}
 
+	public static void HelpedNPC(int NPCNumber){
+		completedEvents[NPCNumber] = true;
+	}
+
 	/// <summary>
 	/// Check individual event flag
 	/// </summary>
 	/// <param name="et">Et.</param>
 	public static bool CheckEventStatus(EventType et){
 		return completedEvents [(int)et];
+	}
+	public static bool CheckEventStatus(int NPCNumber){
+		return completedEvents [NPCNumber];
 	}
 
 	/// <summary>

@@ -31,7 +31,7 @@ public class NPCSpawnManager : MonoBehaviour {
 	void SpawnAll(){
 		for (int i = 0; i < NPCs.Length; i++) {
 			IncrementSpawnPoint ();
-			livingNPCs.Add(new NPCList(Instantiate (NPCs [i].prefab, spawnPosition, Quaternion.identity) as GameObject, NPCs[i].NPCEvent));
+			livingNPCs.Add(new NPCList(Instantiate (NPCs [i].prefab, spawnPosition, Quaternion.identity) as GameObject, NPCs[i].NPCNumber));
 		}
 	}
 
@@ -58,8 +58,7 @@ public class NPCSpawnManager : MonoBehaviour {
 	/// </summary>
 	void UpdateLivingNPCs(){
 		for (int i = livingNPCs.Count - 1; i >= 0; i--) {
-			Debug.Log ("NPC #" + i + " status: " + EventManager.CheckEventStatus (livingNPCs [i].NPCEvent));
-			if (!EventManager.CheckEventStatus (livingNPCs [i].NPCEvent)) {
+			if (!EventManager.CheckEventStatus (livingNPCs [i].NPCNumber)) {
 				livingNPCs.RemoveAt (i);
 			}
 		}
@@ -77,15 +76,18 @@ public class NPCSpawnManager : MonoBehaviour {
 [System.Serializable]
 public class NPC{
 	public GameObject prefab;
-	public EventType NPCEvent;
+	//public EventType NPCEvent;
+	public int NPCNumber;
 }
 
 public class NPCList{
 	public GameObject obj;
-	public EventType NPCEvent;
+	//public EventType NPCEvent;
+	public int NPCNumber;
 
-	public NPCList(GameObject newObj, EventType newNPCEvent){
+	public NPCList(GameObject newObj, int newNPCNumber/*, EventType newNPCEvent*/){
 		obj = newObj;
-		NPCEvent = newNPCEvent;
+		//NPCEvent = newNPCEvent;
+		NPCNumber = newNPCNumber;
 	}
 }

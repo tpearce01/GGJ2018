@@ -42,6 +42,10 @@ public class NPCDialogue : MonoBehaviour {
 		TriggerEvent (event2);
 	}
 
+	public void HelpedNPC(int NPCNumber){
+		EventManager.HelpedNPC(NPCNumber);
+	}
+
 	void TriggerEvent(EventType e){
 		switch ((int)e) {
 		case 0:

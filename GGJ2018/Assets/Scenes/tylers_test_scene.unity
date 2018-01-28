@@ -276,6 +276,111 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 10}
   m_EdgeRadius: 0
+--- !u!1 &269323106 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1429170315528566, guid: f0435c87de8f345c488e255002d4b2a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 462783903}
+--- !u!1001 &462783903
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224065266880488982, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f0435c87de8f345c488e255002d4b2a3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &623538971
 Prefab:
   m_ObjectHideFlags: 0
@@ -328,7 +433,7 @@ Prefab:
     - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
         type: 2}
       propertyPath: NPCs.Array.size
-      value: 2
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4450009020469966, guid: 7cf6b5590a1b2478d97f4cbe7c052af6, type: 2}
       propertyPath: m_LocalPosition.x
@@ -371,13 +476,13 @@ Prefab:
         type: 2}
       propertyPath: NPCs.Array.data[0].prefab
       value: 
-      objectReference: {fileID: 1502638680047942, guid: 1270b0006ae1e4bd3b34c0c65c0b6d30,
+      objectReference: {fileID: 1719314522602472, guid: d695331dd59757746b27b73f91258909,
         type: 2}
     - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
         type: 2}
       propertyPath: NPCs.Array.data[1].prefab
       value: 
-      objectReference: {fileID: 1076368263415472, guid: f480986629a9446b6a58e3739ba8ff91,
+      objectReference: {fileID: 1799958973097688, guid: 9f9d9a817b998eb48bb39a519822b481,
         type: 2}
     - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
         type: 2}
@@ -399,6 +504,278 @@ Prefab:
       propertyPath: spawnPosition.x
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 1797102840197944, guid: 5aff86ff5f7734d49aa68b6ff17edb18,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[2].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[3].prefab
+      value: 
+      objectReference: {fileID: 1992066932603290, guid: 563cfd539c54d7041907a2152f72abf4,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[3].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[4].prefab
+      value: 
+      objectReference: {fileID: 1355009702561816, guid: c1f74d1ae7ff1924fa33b48d5faa3f10,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[4].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 1566228895528692, guid: 3f698da9130e7a34ebe3b3d6e40aba49,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[5].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[6].prefab
+      value: 
+      objectReference: {fileID: 1192864737126932, guid: 1f1ffea56af7249478ee968d352a803f,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[6].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[7].prefab
+      value: 
+      objectReference: {fileID: 1197956760203848, guid: 9a58284b7372b024ebf8b170a5a509b6,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[7].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[8].prefab
+      value: 
+      objectReference: {fileID: 1732080966900460, guid: 66cfe9fc304ed6d4785d991c7bf8220a,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[8].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[9].prefab
+      value: 
+      objectReference: {fileID: 1289441236922486, guid: ab07996bf38414a47b157a3f91d087fb,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[9].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[10].prefab
+      value: 
+      objectReference: {fileID: 1944060985533282, guid: 2397fa6c5d1c3f14ea449f348d8f0c9b,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[10].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[11].prefab
+      value: 
+      objectReference: {fileID: 1293025512518398, guid: e37ab1ed1d544f041bc0af0eec516e1b,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[11].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[12].prefab
+      value: 
+      objectReference: {fileID: 1482917272343538, guid: fe26e27110199444ba81f7d61967c503,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[12].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[13].prefab
+      value: 
+      objectReference: {fileID: 1220875966272550, guid: 036ad52c01bc3f941b46d292c31cfa68,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[13].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[14].prefab
+      value: 
+      objectReference: {fileID: 1795564396412794, guid: 8e04c917ac662884b86be1567109c815,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[14].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[15].prefab
+      value: 
+      objectReference: {fileID: 1462339856168438, guid: ca1792c453ff0974a958cf66d0215bc5,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[15].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[16].prefab
+      value: 
+      objectReference: {fileID: 1566253975547930, guid: af8c628c494ba5e46a9f4d5c8772a9e9,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[16].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[17].prefab
+      value: 
+      objectReference: {fileID: 1966182531344746, guid: 56b55bbe4703cbf4a90c30180b7ca0c6,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[17].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[18].prefab
+      value: 
+      objectReference: {fileID: 1966182531344746, guid: 56b55bbe4703cbf4a90c30180b7ca0c6,
+        type: 2}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[18].NPCEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[1].NPCNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[2].NPCNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[3].NPCNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[4].NPCNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[5].NPCNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[6].NPCNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[7].NPCNumber
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[8].NPCNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[9].NPCNumber
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[10].NPCNumber
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[11].NPCNumber
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[12].NPCNumber
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[13].NPCNumber
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[14].NPCNumber
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[15].NPCNumber
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[16].NPCNumber
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887597369492246, guid: 7cf6b5590a1b2478d97f4cbe7c052af6,
+        type: 2}
+      propertyPath: NPCs.Array.data[17].NPCNumber
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cf6b5590a1b2478d97f4cbe7c052af6, type: 2}
   m_IsPrefabParent: 0
@@ -407,6 +784,98 @@ GameObject:
   m_PrefabParentObject: {fileID: 1278423726103840, guid: 2dec1aaf65ef07a4b9dd2bd9f8b56577,
     type: 2}
   m_PrefabInternal: {fileID: 1715552879}
+--- !u!1 &873726223 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1223253596005248, guid: f0435c87de8f345c488e255002d4b2a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 462783903}
+--- !u!1 &1316910110 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1605200126159064, guid: f0435c87de8f345c488e255002d4b2a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 462783903}
+--- !u!1 &1356452151 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1663003678652740, guid: f0435c87de8f345c488e255002d4b2a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 462783903}
+--- !u!1001 &1391226448
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114086337923673048, guid: 8075a564fc31c469dafd128eba8cb314,
+        type: 2}
+      propertyPath: itemObjects.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 395.01663
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 349.90057
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.5034883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013379877901648, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086337923673048, guid: 8075a564fc31c469dafd128eba8cb314,
+        type: 2}
+      propertyPath: itemObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1316910110}
+    - target: {fileID: 114086337923673048, guid: 8075a564fc31c469dafd128eba8cb314,
+        type: 2}
+      propertyPath: itemObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1356452151}
+    - target: {fileID: 114086337923673048, guid: 8075a564fc31c469dafd128eba8cb314,
+        type: 2}
+      propertyPath: itemObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 1501916850}
+    - target: {fileID: 114086337923673048, guid: 8075a564fc31c469dafd128eba8cb314,
+        type: 2}
+      propertyPath: itemObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 873726223}
+    - target: {fileID: 114086337923673048, guid: 8075a564fc31c469dafd128eba8cb314,
+        type: 2}
+      propertyPath: itemObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 269323106}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8075a564fc31c469dafd128eba8cb314, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1501916850 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1306915775322482, guid: f0435c87de8f345c488e255002d4b2a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 462783903}
 --- !u!1001 &1607966197
 Prefab:
   m_ObjectHideFlags: 0
@@ -467,7 +936,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4549061167782444, guid: 2dec1aaf65ef07a4b9dd2bd9f8b56577, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4549061167782444, guid: 2dec1aaf65ef07a4b9dd2bd9f8b56577, type: 2}
       propertyPath: m_LocalPosition.z
