@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fade : MonoBehaviour {
 
@@ -35,5 +36,6 @@ public class Fade : MonoBehaviour {
 			toFade.color = new Color (toFade.color.r, toFade.color.g, toFade.color.b, toFade.color.a - 0.02f);
 			yield return new WaitForSeconds (duration / 50);
 		}
+		SceneManager.LoadScene ("main_menu");
 	}
 }

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour {
 
@@ -9,8 +11,20 @@ public class InventoryManager : MonoBehaviour {
 	public GameObject[] itemObjects;
 	public GameObject notEnoughResourcesPanel;
 
+	[SerializeField] Image toFade;
+
 	void Awake(){
 		instance = this;
+	}
+
+	void Start(){
+		StartCoroutine (CheckGameOver ());
+	}
+
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.T)) {
+			Test ();
+		}
 	}
 
 	public void ChangeItemCount(Item index, int value){
@@ -55,7 +69,36 @@ public class InventoryManager : MonoBehaviour {
 		return true;
 	}
 
+	IEnumerator CheckGameOver(){
+		bool gameOver = false;
+		while (!gameOver) {
+			if (itemObjects [2].GetComponent<Item_Count> ().Amount >= 1 &&
+			   itemObjects [3].GetComponent<Item_Count> ().Amount >= 1 &&
+			   itemObjects [4].GetComponent<Item_Count> ().Amount >= 1) {
+				gameOver = true;
+			}
+			yield return new WaitForSeconds (1);
+		}
+		yield return new WaitForSeconds (1);
+		StartCoroutine(FadeToBlack (2));
+		yield return new WaitForSeconds (2);
+		SceneManager.LoadScene ("game_over");
+	}
 
+	IEnumerator FadeToBlack(int duration){
+		toFade.gameObject.SetActive (true);
+		toFade.color = new Color (toFade.color.r, toFade.color.g, toFade.color.b, 0);
+		for (int i = 0; i < 50; i++) {
+			toFade.color = new Color (toFade.color.r, toFade.color.g, toFade.color.b, toFade.color.a + 0.02f);
+			yield return new WaitForSeconds (duration / 50);
+		}
+	}
+
+	void Test(){
+		itemObjects [2].GetComponent<Item_Count> ().SetValue (1);
+		itemObjects [3].GetComponent<Item_Count> ().SetValue (1);
+		itemObjects [4].GetComponent<Item_Count> ().SetValue (1);
+	}
 }
 
 public enum Item{
