@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCSpawnManager : MonoBehaviour {
+	public static NPCSpawnManager instance;
+	public List<GameObject> NPCRefs = new List<GameObject>();
 	[SerializeField] NPC[] NPCs;
 	[SerializeField] Vector2 spawnPosition;
 	[SerializeField] float distanceBetweenSpawns;
@@ -10,6 +12,10 @@ public class NPCSpawnManager : MonoBehaviour {
 	List<NPCList> livingNPCs = new List<NPCList>();
 	bool NPCListUpdated;
 	bool firstSpawn = true;
+
+	void Awake(){
+		instance = this;
+	}
 
 	void Start(){
 		SpawnAll ();
@@ -32,6 +38,7 @@ public class NPCSpawnManager : MonoBehaviour {
 		for (int i = 0; i < NPCs.Length; i++) {
 			IncrementSpawnPoint ();
 			livingNPCs.Add(new NPCList(Instantiate (NPCs [i].prefab, spawnPosition, Quaternion.identity) as GameObject, NPCs[i].NPCNumber));
+			NPCRefs.Add (livingNPCs [i].obj);
 		}
 	}
 

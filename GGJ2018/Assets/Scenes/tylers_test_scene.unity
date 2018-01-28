@@ -205,6 +205,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114749662448130418, guid: c87e49aaeb0044804b7de20228f1b281,
+        type: 2}
+      propertyPath: moveNPCs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4553990761497092, guid: c87e49aaeb0044804b7de20228f1b281, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -236,6 +241,11 @@ Prefab:
     - target: {fileID: 4553990761497092, guid: c87e49aaeb0044804b7de20228f1b281, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749662448130418, guid: c87e49aaeb0044804b7de20228f1b281,
+        type: 2}
+      propertyPath: moveNPCs.Array.data[0].targetPosition.x
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c87e49aaeb0044804b7de20228f1b281, type: 2}
@@ -658,6 +668,21 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114294011718069388, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: myExhaustion.bar
+      value: 
+      objectReference: {fileID: 840676544}
+    - target: {fileID: 114294011718069388, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: myExhaustion.maxVal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114294011718069388, guid: f0435c87de8f345c488e255002d4b2a3,
+        type: 2}
+      propertyPath: tickDistance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0435c87de8f345c488e255002d4b2a3, type: 2}
@@ -1159,6 +1184,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1278423726103840, guid: 2dec1aaf65ef07a4b9dd2bd9f8b56577,
     type: 2}
   m_PrefabInternal: {fileID: 1715552879}
+--- !u!114 &840676544 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114294011718069388, guid: f0435c87de8f345c488e255002d4b2a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 462783903}
+  m_Script: {fileID: 11500000, guid: 46f50ebc910b29547831fddeff530d22, type: 3}
 --- !u!1 &873726223 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1223253596005248, guid: f0435c87de8f345c488e255002d4b2a3,
