@@ -69,7 +69,7 @@ public class AudioManager : MonoBehaviour {
 	/// </summary>
 	void Cleanup(){
 		for (int i = sources.Count - 1; i >= 0; i--) {
-			if (!sources [i].isPlaying || sources[i].volume == 0) {
+			if (!sources [i].isPlaying || sources[i].volume <= 0) {
 				Destroy (sources [i]);
 				sources.RemoveAt (i);
 			}
