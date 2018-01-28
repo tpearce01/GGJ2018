@@ -53,10 +53,41 @@ public class NPCDialogue : MonoBehaviour {
 		case 2:
 			EventManager.HelpedStarvingGuy ();
 			break;
+		case 3:
+			EventManager.SubtractOneFood ();
+			break;
+		case 4:
+			EventManager.SubtractThreeFood ();
+			break;
+		case 5:
+			EventManager.SubtractOneWater ();
+			break;
+		case 6:
+			EventManager.SubtractTwoWater ();
+			break;
+		case 7:
+			EventManager.IncreaseExhaustion10 ();
+			break;
+		case 8:
+			EventManager.IncreaseExhaustion20 ();
+			break;
+		case 9:
+			EventManager.IncreaseExhaustion30 ();
+			break;
+		case 10:
+			EventManager.IncreaseExhaustion50 ();
+			break;
+		case 11:
+			EventManager.SubtractOneOfEach ();
+			break;
+		case 12:
+			EventManager.Thief ();
+			break;
 		default:
 			Debug.LogError ("No valid event triggered.");
 			break;
 		}
+
 	}
 
 	void OnEnable(){
