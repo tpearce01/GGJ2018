@@ -127,7 +127,7 @@ public class EventManager : MonoBehaviour {
 		if (InventoryManager.instance.IsValidOperation (Item.Water, 1) && InventoryManager.instance.IsValidOperation (Item.Food, 1)) {
 			InventoryManager.instance.ChangeItemCount (Item.Food, -1);
 			InventoryManager.instance.ChangeItemCount (Item.Water, -1);
-			IncreaseExhaustion10 (1f);
+			ExhaustionBar.instance.ChangeValue (.1f);
 		}
 	}
 
