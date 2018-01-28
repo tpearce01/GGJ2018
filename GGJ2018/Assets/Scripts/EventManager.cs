@@ -51,11 +51,93 @@ public class EventManager : MonoBehaviour {
 	public static void CompletedEvent(EventType et){
 		completedEvents[(int)et] = true;
 	}
+
+	public static void SubtractOneWater(){
+		InventoryManager.instance.ChangeItemCount (Item.Water, -1);
+	}
+
+	public static void SubtractTwoWater(){
+		SubtractOneWater ();
+		SubtractOneWater ();
+	}
+
+	public static void AddOneWater(){
+		InventoryManager.instance.ChangeItemCount (Item.Water, 1);
+	}
+
+	public static void AddOneFood(){
+		InventoryManager.instance.ChangeItemCount (Item.Food, 1);
+	}
+
+	public static void SubtractOneFood(){
+		InventoryManager.instance.ChangeItemCount (Item.Food, -1);
+	}
+
+	public static void SubtractThreeFood(){
+		SubtractOneFood ();
+		SubtractOneFood ();
+		SubtractOneFood ();
+	}
+
+	public static void IncreaseExhaustion10(){
+		ExhaustionBar.ChangeValue (.1f);
+	}
+
+	public static void IncreaseExhaustion20(){
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+	}
+
+	public static void IncreaseExhaustion30(){
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+	}
+
+	public static void IncreaseExhaustion50(){
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+		IncreaseExhaustion10 ();
+	}
+
+	public static void ReduceExhaustion10(){
+		ExhaustionBar.ChangeValue (-.1f);
+	}
+
+	public static void SubtractOneOfEach(){
+		InventoryManager.instance.ChangeItemCount (Item.Food, -1);
+		InventoryManager.instance.ChangeItemCount (Item.Water, -1);
+	}
+
+	public static void Thief(){
+		InventoryManager.instance.SetItemCount (Item.Food, 0);
+		InventoryManager.instance.SetItemCount (Item.Water, 0);
+	}
 		
 }
 
 public enum EventType{
 	NoEvent = 0,
 	LifeAlert = 1,
-	StarvingGuy = 2
+	StarvingGuy = 2,
+	SubOneFood = 3,
+	SubThreeFood = 4,
+	SubOneWater = 5,
+	SubTwoWater = 6,
+	Exhaust10 = 7,
+	Exhaust20 = 8,
+	Exhaust30 = 9,
+	Exhaust50 = 10,
+	SubOneOfEach = 11,
+	Thief = 12
 }
+
+/*Thief takes all supplies
+ * Food: 5 People need Food [ 1 person: 3 food ]
+Water: 6 People need water [ 1 person: 2 water ]
+Stamina: 5 people use your Stamina [ 1: 10% stamina, 2: 20% stamina, 1: 30% stamina, 1: 50% stamina ]
+All: 1 person.
+Thief: 1 person. [ takes all water, all food ]
+*/
