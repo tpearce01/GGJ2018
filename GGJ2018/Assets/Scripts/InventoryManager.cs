@@ -21,12 +21,6 @@ public class InventoryManager : MonoBehaviour {
 		StartCoroutine (CheckGameOver ());
 	}
 
-	void Update(){
-		if (Input.GetKeyDown (KeyCode.T)) {
-			Test ();
-		}
-	}
-
 	public void ChangeItemCount(Item index, int value){
 		ChangeItemCount ((int)index, value);
 	}
@@ -88,12 +82,6 @@ public class InventoryManager : MonoBehaviour {
 			toFade.color = new Color (toFade.color.r, toFade.color.g, toFade.color.b, toFade.color.a + 0.02f);
 			yield return new WaitForSeconds (duration / 50);
 		}
-	}
-
-	void Test(){
-		itemObjects [2].GetComponent<Item_Count> ().SetValue (1);
-		itemObjects [3].GetComponent<Item_Count> ().SetValue (1);
-		itemObjects [4].GetComponent<Item_Count> ().SetValue (1);
 	}
 }
 
