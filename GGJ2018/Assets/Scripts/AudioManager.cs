@@ -14,6 +14,11 @@ public class AudioManager : MonoBehaviour {
 		Application.runInBackground = true;
 	}
 
+	void Start(){
+		PlaySoundLoop (Sound.BGM);
+		PlaySoundLoop (Sound.Seagull);
+	}
+
 	void Update(){
 		Cleanup ();
 	}
@@ -115,4 +120,6 @@ public enum Sound{
 	HealUp = 1,
 	Footsteps = 2,
 	MenuClick = 3,
+	Seagull = 4,
+	BGM = 5
 }
