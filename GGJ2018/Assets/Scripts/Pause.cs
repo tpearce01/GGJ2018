@@ -14,11 +14,11 @@ public class Pause : MonoBehaviour {
 	
 	void Update () {
     
-    if(ExhaustionBar.maxExhaustion()) {
-            GameOver();
-    }
+	    if(ExhaustionBar.maxExhaustion()) {
+	            GameOver();
+	    }
 
-	if(Input.GetKeyDown(KeyCode.Escape)){
+		if(Input.GetKeyDown(KeyCode.Escape)){
             if (GamePaused){
                 Resume();
             }

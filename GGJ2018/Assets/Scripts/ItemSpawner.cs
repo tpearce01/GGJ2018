@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour {
 	[SerializeField] Spawnable[] toSpawn;
 	[SerializeField] NPCMover[] moveNPCs;
+	//[SerializeField] Spawnable pathsObject;
 
 	void Start(){
 		SpawnAll ();
@@ -29,6 +30,13 @@ public class ItemSpawner : MonoBehaviour {
 			}
 		}
 	}
+
+	/*
+	void SpawnPaths(){
+		if (CameraMovement.xPosition () >= pathsObject.spawnLocation.x - 10) {
+			Instantiate (pathsObject.prefab, pathsObject.spawnLocation, Quaternion.identity);
+		}
+	}*/
 }
 
 [System.Serializable]
